@@ -1,0 +1,254 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="list/1">LuxurynsightTest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="list/1">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GitHub</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Titre et numéro de la page actuelle -->
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">List of news (Filtered by tag “Uniqlo” and by domain “wwd.com”):</h1>
+        <h6 id="nbArticles"></h6>
+      </div>
+    </div>
+
+    <!-- Liste d'actualité format card -->
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <!-- Si l'image est accessible, html affichera l'image par id, s'il y a une erreur d'image non trouvée, il affichera une autre image par onerror-->
+              <img class="card-img-top" id="preview0" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name0"></h5>
+                <p class="card-text" id="domain0"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['1']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview1" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name1"></h5>
+                <p class="card-text" id="domain1"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['2']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview2" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name2"></h5>
+                <p class="card-text" id="domain2"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['3']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview3" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name3"></h5>
+                <p class="card-text" id="domain3"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['4']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview4" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name4"></h5>
+                <p class="card-text" id="domain4"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['5']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview5" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name5"></h5>
+                <p class="card-text" id="domain5"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['6']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview6" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name6"></h5>
+                <p class="card-text" id="domain6"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['7']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview7" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name7"></h5>
+                <p class="card-text" id="domain7"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['8']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview8" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name8"></h5>
+                <p class="card-text" id="domain8"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['9']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview9" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name9"></h5>
+                <p class="card-text" id="domain9"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['10']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview10" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name10"></h5>
+                <p class="card-text" id="domain10"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['11']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview11" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name11"></h5>
+                <p class="card-text" id="domain11"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['12']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview12" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name12"></h5>
+                <p class="card-text" id="domain12"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['13']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" id="preview13" onerror="this.src='https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1.png'" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-text" id="name13"></h5>
+                <p class="card-text" id="domain13"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['14']"  data-toggle="modal" data-target="#exampleModalLong">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!-- Pagination -->
+  <nav>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="list/1">1</a></li>
+      <li class="page-item"><a class="page-link" href="list/2">2</a></li>
+      <li class="page-item"><a class="page-link" href="list/3">3</a></li>
+      <li class="page-item"><a class="page-link" href="list/4">4</a></li>
+      <li class="page-item"><a class="page-link" href="list/5">5</a></li>
+      <li class="page-item"><a class="page-link" href="list/6">6</a></li>
+      <li class="page-item"><a class="page-link" href="list/7">7</a></li>
+    </ul>
+  </nav>
+
+  <router-outlet></router-outlet>
